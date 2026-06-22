@@ -1206,6 +1206,7 @@ PRODUCT_PACKAGES += \
     libOPLUSMotionDetection \
     libOPLUS_SCPortrait \
     libOplusPDCore \
+    libOplusSecurity \
     libOpo_awb \
     libPerfectColor \
     libPerfectlyClearCruxOpt \
