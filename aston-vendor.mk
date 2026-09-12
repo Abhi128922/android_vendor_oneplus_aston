@@ -807,7 +807,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/odm/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.dat:$(TARGET_COPY_OUT_ODM)/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.dat \
     vendor/oneplus/aston/proprietary/odm/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.fw \
     vendor/oneplus/aston/proprietary/odm/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_ODM)/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.xml \
-    vendor/oneplus/aston/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/aston/proprietary/odm/etc/libnfc-mtp-SN220.conf_23801:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_23801 \
     vendor/oneplus/aston/proprietary/odm/etc/libnfc-mtp-SN220.conf_23861:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_23861 \
     vendor/oneplus/aston/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat \
@@ -966,23 +965,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/odm/vendor/firmware/uff_spi.b08:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b08 \
     vendor/oneplus/aston/proprietary/odm/vendor/firmware/uff_spi.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.mdt \
     vendor/oneplus/aston/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
-    vendor/oneplus/aston/proprietary/system_ext/etc/horae/horae.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae.conf \
-    vendor/oneplus/aston/proprietary/system_ext/etc/horae/horae_SM8550.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae_SM8550.conf \
     vendor/oneplus/aston/proprietary/vendor/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json \
     vendor/oneplus/aston/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/oneplus/aston/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/oneplus/aston/proprietary/vendor/etc/ltm_config_AA551_P_3_A0004_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AA551_P_3_A0004_dsc_cmd_mode_panel.xml \
-    vendor/oneplus/aston/proprietary/vendor/firmware/CAMERA_ICP.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b20 \
-    vendor/oneplus/aston/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
-    vendor/oneplus/aston/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
-    vendor/oneplus/aston/proprietary/vendor/firmware/a740_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b02 \
-    vendor/oneplus/aston/proprietary/vendor/firmware/a740_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mbn \
-    vendor/oneplus/aston/proprietary/vendor/firmware/a740_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.mdt \
-    vendor/oneplus/aston/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
-    vendor/oneplus/aston/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
-    vendor/oneplus/aston/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/oneplus/aston/proprietary/vendor/firmware/sn220u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sn220u.bin \
-    vendor/oneplus/aston/proprietary/vendor/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu30_4v.mbn \
     vendor/oneplus/aston/proprietary/vendor/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_uw.bin \
     vendor/oneplus/aston/proprietary/vendor/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_wt.bin \
     vendor/oneplus/aston/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_t.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_t.bin \
@@ -1161,9 +1148,6 @@ PRODUCT_PACKAGES += \
     libthreadutils \
     libubifocus \
     libvideoml \
-    vendor.oplus.hardware.cameraextension-V1-ndk \
-    vendor.oplus.hardware.cammidasservice-V1-ndk_vendor \
-    vendor.oplus.hardware.commondcs-V1-ndk_platform \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     com.qti.sensor.imx355 \
@@ -1244,7 +1228,6 @@ PRODUCT_PACKAGES += \
     libaecCustomParamParser \
     libafCustomParamParser \
     libaiboost_qnn_external_delegate_te \
-    libaiboost_te \
     libaideblur \
     libaisal \
     libaisd \
@@ -1361,12 +1344,9 @@ PRODUCT_PACKAGES += \
     libyuv2 \
     libyuvwrapper \
     libziparchive_odm \
-    vendor.oplus.hardware.camera_rfi-V1-ndk \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
-    vendor.oplus.hardware.cammidasservice-V1-ndk \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
-    vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     odm_lib_rfsa_adsp_libtfadsp_sb4_0_rx_so \
     odm_lib_rfsa_adsp_libtfadsp_sb4_0_tx_so \
     EuiccGoogle \
