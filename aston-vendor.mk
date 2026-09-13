@@ -391,6 +391,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/odm/etc/camera/gesture/tt_hand_kp_v6.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_kp_v6.0.model \
     vendor/oneplus/aston/proprietary/odm/etc/camera/gesture/tt_hand_lr_v3.0.model:$(TARGET_COPY_OUT_ODM)/etc/camera/gesture/tt_hand_lr_v3.0.model \
     vendor/oneplus/aston/proprietary/odm/etc/camera/libiceainr_model.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/libiceainr_model.dlc \
+    vendor/oneplus/aston/proprietary/odm/etc/camera/license_release_fdc.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/license_release_fdc.lic \
     vendor/oneplus/aston/proprietary/odm/etc/camera/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/media_profiles.xml \
     vendor/oneplus/aston/proprietary/odm/etc/camera/meishe_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/ByYo3If \
     vendor/oneplus/aston/proprietary/odm/etc/camera/meishe_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Cold.cube.rgb.bin \
@@ -463,6 +464,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/odm/etc/camera/meishe_lut/vivid-lut.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/vivid-lut.cube.rgb.bin \
     vendor/oneplus/aston/proprietary/odm/etc/camera/meishe_lut/vivid-warm.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/vivid-warm.cube.rgb.bin \
     vendor/oneplus/aston/proprietary/odm/etc/camera/model/DocDetectV15.xbin:$(TARGET_COPY_OUT_ODM)/etc/camera/model/DocDetectV15.xbin \
+    vendor/oneplus/aston/proprietary/odm/etc/camera/model/license.lic:$(TARGET_COPY_OUT_ODM)/etc/camera/model/license.lic \
     vendor/oneplus/aston/proprietary/odm/etc/camera/model_fdc.data:$(TARGET_COPY_OUT_ODM)/etc/camera/model_fdc.data \
     vendor/oneplus/aston/proprietary/odm/etc/camera/mtStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mtStereoParams.bin \
     vendor/oneplus/aston/proprietary/odm/etc/camera/mwStereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/mwStereoParams.bin \
@@ -743,6 +745,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/odm/etc/camera/selfbokehmodel.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/selfbokehmodel.bin \
     vendor/oneplus/aston/proprietary/odm/etc/camera/settings_fdc.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc.txt \
     vendor/oneplus/aston/proprietary/odm/etc/camera/settings_fdc_lite.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc_lite.txt \
+    vendor/oneplus/aston/proprietary/odm/etc/camera/singleblur/license_release.license:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/license_release.license \
     vendor/oneplus/aston/proprietary/odm/etc/camera/singleblur/personseg.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/personseg.bin \
     vendor/oneplus/aston/proprietary/odm/etc/camera/singleblur/preview_seg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/preview_seg.json \
     vendor/oneplus/aston/proprietary/odm/etc/camera/spectrum_test_data_golden:$(TARGET_COPY_OUT_ODM)/etc/camera/spectrum_test_data_golden \
@@ -1200,6 +1203,7 @@ PRODUCT_PACKAGES += \
     libOPLUSMotionDetection \
     libOPLUS_SCPortrait \
     libOplusPDCore \
+    libOplusSecurity \
     libOpo_awb \
     libPerfectColor \
     libPerfectlyClearCruxOpt \
@@ -1327,6 +1331,7 @@ PRODUCT_PACKAGES += \
     librmsclib1 \
     libsaveshaderbin \
     libsdk_sr \
+    libsdk_sr_ref \
     libsharebuffer \
     libsharebuffer_impl \
     libsnapdragoncolor-pxlw \
@@ -1344,6 +1349,8 @@ PRODUCT_PACKAGES += \
     libyuv2 \
     libyuvwrapper \
     libziparchive_odm \
+    sr_models \
+    sr_ref_models \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
