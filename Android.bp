@@ -11958,7 +11958,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libsdk_sr_ref",
-    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
@@ -12421,7 +12420,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "sr_models",
-    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
@@ -12446,7 +12444,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "sr_ref_models",
-    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
