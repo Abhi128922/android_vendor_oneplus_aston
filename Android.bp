@@ -7645,7 +7645,6 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libAlgoProcess.so",
             ],
             shared_libs: [
-                "libapsfixup",
                 "android.hardware.graphics.mapper@4.0",
                 "android.hardware.graphics.common-V7-ndk",
                 "libgralloctypes",
@@ -7658,6 +7657,7 @@ cc_prebuilt_library_shared {
                 "libion",
                 "libapsjpeg",
                 "libapsexif",
+                "libapsfixup",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -11957,31 +11957,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsdk_sr_ref",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libsdk_sr_ref.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libc++_shared",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsharebuffer",
     owner: "oneplus",
     strip: {
@@ -12419,57 +12394,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sr_models",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/sr_models.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "sr_ref_models",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/sr_ref_models.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libc++_shared",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.camera_rfi-V1-service-impl",
     owner: "oneplus",
     strip: {
@@ -12550,6 +12474,7 @@ cc_prebuilt_library_shared {
     prefer: true,
     device_specific: true,
 }
+
 
 cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.sendextcamcmd-V1-service-impl",
@@ -12871,3 +12796,56 @@ cc_prebuilt_binary {
     prefer: true,
     device_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libsdk_sr_ref",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/odm/lib64/libsdk_sr_ref.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "sr_models",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/odm/lib64/sr_models.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    device_specific: true,
+}
+
+
+cc_prebuilt_library_shared {
+    name: "sr_ref_models",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/odm/lib64/sr_ref_models.so"],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+    device_specific: true,
+}
+

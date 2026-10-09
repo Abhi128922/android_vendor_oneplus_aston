@@ -1332,6 +1332,8 @@ PRODUCT_PACKAGES += \
     libsaveshaderbin \
     libsdk_sr \
     libsdk_sr_ref \
+    sr_models \
+    sr_ref_models \
     libsharebuffer \
     libsharebuffer_impl \
     libsnapdragoncolor-pxlw \
@@ -1349,8 +1351,6 @@ PRODUCT_PACKAGES += \
     libyuv2 \
     libyuvwrapper \
     libziparchive_odm \
-    sr_models \
-    sr_ref_models \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
